@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pacientes</title>
+    <link rel="stylesheet" href="buscador.css">
+    <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
-    <header>
+    <header class="navbar">
         //espacio para la navbar
 
     </header>
 
-    //botones
     <article>
         <a href="Buscador.html"><button>BUSCAR PACIENTE</button></a>
         <br>
@@ -20,30 +21,38 @@
         <a href="registrar.html"><button>REGISTRAR PACIENTE</button></a>
     </article>
 
-    //parte derecha de la pagina
     <aside>
-        //registrar
-        
-        //Datos del paciente
+        //Datos del paciente//:
         <div>
-            //nombre
-            <input type="text" name="Nombre" id="Nombre" min="1" max="21">
-            //Apellido paterno
-            <input type="text" name="Ap" id="Ap" min="1" max="15">
-            //Apellido materno
-            <input type="text" name="Am" id="Am" min="1" max="15">
-            //Edad
-            <input type="number" name="edad" id="edad" min="3" max="117">
-            //Peso
-            <input type="number" name="peso" id="peso" min="0" max="400">
-            //Estatura
-            <input type="number" name="estatura" id="estatura" min="0" max="260">
-            //CURP
-            <input type="text" name="CURP" id="CURP" min="18" max="18">
+
+            <p>Nombre:<input type="text" name="Nombre" id="Nombre" min="1" max="50"></p>
+
+            <p>Apellido paterno:<input type="text" name="Ap" id="Ap" min="1" max="15"></p>
+
+            <p>Apellido materno:<input type="text" name="Am" id="Am" min="1" max="15"></p>
+
+            <p><form method="get" action="#">
+                <p>
+                  <label for="Genero">Genero:</label>
+                  <select name="genero" id="gen">
+                    <option>Masculino</option>
+                    <option>Femenino</option>
+                    <option>Otro</option>
+                  </select>
+                </p>
+              </form></p>
+            
+            <p>Edad:<input type="number" name="edad" id="edad" min="3" max="117"></p>
+           
+            <p>Peso:<input type="number" name="peso" id="peso" min="0" max="400"></p>
+            
+            <p>Estatura:<input type="number" name="estatura" id="estatura" min="0" max="260"></p>
+            
+            <p>CURP:<input type="text" name="CURP" id="CURP" min="18" max="18"></p>
+
+            <p><input type="submit" value="Registrar"></p>
 
         </div>
     </aside>
-
-
 </body>
 </html>
