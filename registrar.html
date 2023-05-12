@@ -14,7 +14,7 @@
 
     //botones
     <article>
-        <a href="buscar.html"><button>BUSCAR PACIENTE</button></a>
+        <a href="Buscador.html"><button>BUSCAR PACIENTE</button></a>
         <br>
         <br>
         <a href="registrar.html"><button>REGISTRAR PACIENTE</button></a>
@@ -27,16 +27,20 @@
         //Datos del paciente
         <div>
             //nombre
-            <input type="text" name="Nombre" id="Nombre" min="1" max="50" required>
+            <input type="text" name="Nombre" id="Nombre" min="1" max="21">
+            //Apellido paterno
+            <input type="text" name="Ap" id="Ap" min="1" max="15">
+            //Apellido materno
+            <input type="text" name="Am" id="Am" min="1" max="15">
             //Edad
-            <input type="number" name="edad" id="edad" min="3" max="117" required>
+            <input type="number" name="edad" id="edad" min="3" max="117">
             //Peso
-            <input type="number" name="peso" id="peso" min="0" max="400" required>
+            <input type="number" name="peso" id="peso" min="0" max="400">
             //Estatura
-            <input type="number" name="estatura" id="estatura" min="0" max="260" required>
+            <input type="number" name="estatura" id="estatura" min="0" max="260">
             //CURP
-            <input type="text" name="CURP" id="CURP" min="18" max="18" required>
-            <input type="submit" value="Registrar">
+            <input type="text" name="CURP" id="CURP" min="18" max="18">
+
         </div>
     </aside>
 
