@@ -1,50 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Expediente Médico</title>
+	<title>Expediente Medico</title>
 	<link rel="stylesheet" type="text/css" href="style-exp.css">
 </head>
 <body>
-	<div class="container">
-		<h1>Expediente Médico</h1>
+
+	<header>
+		<nav>
+            <div class="container-img">
+                <img src="img/LOGO.jpg" alt="LOGO">
+                <a href="Pagina_principal.html">NAME</a>
+            </div>
+            <div class="container-links">
+                <a href="#">OPCION 1</a>
+                <a href="#">OPCION 2</a>
+                <a href="#">OPCION 3</a>
+            </div>
+            <div class="menu-user">
+                <a href="#">Mi perfil</a><br>
+                <a href="#">Editar perfil</a><br>
+                <a href="#">Cerrar Sesión</a>
+            </div>
+            <div class="container-menu">
+                <img src="img/usuario-icono.png" alt="usuario-icono">
+
+            </div>
+        </nav>
+	</header>
+	<main>
+		<div class="left-section">
+		<h2>Información personal</h2>
 		<form>
-			<label for="nombre">Nombre:</label>
-			<input type="text" id="nombre" name="nombre">
+			<label for="name">Nombre completo:</label>
+			<input type="text" id="name" name="name" required>
 
-			<label for="apellido">Apellido:</label>
-			<input type="text" id="apellido" name="apellido">
+			<label for="birthdate">Fecha de nacimiento:</label>
+			<input type="date" id="birthdate" name="birthdate" required>
 
-			<label for="fecha_nacimiento">Fecha de Nacimiento:</label>
-			<input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
+			<label for="gender">Género:</label>
+			<select id="gender" name="gender" required>
+				<option value="">Seleccionar</option>
+				<option value="masculino">Masculino</option>
+				<option value="femenino">Femenino</option>
+				<option value="otro">Otro</option>
+			</select>
 
-			<label for="sexo">Sexo:</label>
-			<input type="radio" id="masculino" name="sexo" value="masculino">
-			<label for="masculino">Masculino</label>
-			<input type="radio" id="femenino" name="sexo" value="femenino">
-			<label for="femenino">Femenino</label>
-			<input type="radio" id="otro" name="sexo" value="otro">
-			<label for="otro">Otro</label>
+			<label for="allergies">Alergias:</label>
+			<textarea id="allergies" name="allergies"></textarea>
 
-			<label for="direccion">Dirección:</label>
-			<input type="text" id="direccion" name="direccion">
-
-			<label for="telefono">Teléfono:</label>
-			<input type="tel" id="telefono" name="telefono">
-
-			<label for="email">Email:</label>
-			 <input type="email" id="email" name="email">
-
-			<label for="enfermedades">Enfermedades:</label>
-			<textarea id="enfermedades" name="enfermedades"></textarea>
-
-			<label for="alergias">Alergias:</label>
-			<textarea id="alergias" name="alergias"></textarea>
-
-			<label for="medicamentos">Medicamentos:</label>
-			<textarea id="medicamentos" name="medicamentos"></textarea>
-
-			<input type="submit" value="Enviar">
+			<button type="submit">Enviar</button>
 		</form>
 	</div>
+	<div class="right-section">
+		<h2>Receta médica</h2>
+		<form>
+			<label for="medicine">Medicamento:</label>
+			<input type="text" id="medicine" name="medicine" required>
+
+			<label for="dosage">Dosis:</label>
+			<input type="text" id="dosage" name="dosage" required>
+
+			<label for="frequency">Frecuencia:</label>
+			<input type="text" id="frequency" name="frequency" required>
+
+			<label for="duration">Duración:</label>
+			<input type="text" id="duration" name="duration" required>
+
+			<button type="submit">Enviar</button>
+		</form>
+	</div>
+	</main>
+
+	
 </body>
 </html>
