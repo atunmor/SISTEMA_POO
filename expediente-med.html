@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Expediente Medico</title>
-	<link rel="stylesheet" type="text/css" href="style-exp.css">
+	<link rel="stylesheet" type="text/css" href="css/style-exp.css">
 </head>
 <body>
 
@@ -28,49 +28,79 @@
             </div>
         </nav>
 	</header>
-	<main>
+
+	
+
+<main>
+	<div class="container">
 		<div class="left-section">
-		<h2>Información personal</h2>
-		<form>
-			<label for="name">Nombre completo:</label>
-			<input type="text" id="name" name="name" required>
-
-			<label for="birthdate">Fecha de nacimiento:</label>
-			<input type="date" id="birthdate" name="birthdate" required>
-
-			<label for="gender">Género:</label>
-			<select id="gender" name="gender" required>
-				<option value="">Seleccionar</option>
-				<option value="masculino">Masculino</option>
-				<option value="femenino">Femenino</option>
-				<option value="otro">Otro</option>
-			</select>
-
-			<label for="allergies">Alergias:</label>
-			<textarea id="allergies" name="allergies"></textarea>
-
-			<button type="submit">Enviar</button>
-		</form>
+			<h2>Información personal</h2>
+			<form>
+				<h3 >Nombre completo:</h3>
+				<label id="nombre-paciente" for="">Aqui va el nombre del paciente</label>
+		
+				<h3 >Fecha de nacimiento:</h3>
+				<input type="date" id="birthdate" name="birthdate" required>
+		
+				<label for="gender">Género:</label>
+				<select id="gender" name="gender" required>
+					<option value="">Seleccionar</option>
+					<option value="masculino">Masculino</option>
+					<option value="femenino">Femenino</option>
+					<option value="otro">Otro</option>
+				</select>
+		
+				<label for="allergies">Alergias:</label>
+				<textarea id="allergies" name="allergies"></textarea>
+		
+				<button type="submit">Enviar</button>
+			</form>
+		</div>
+		
+		<div class="right-section">
+			<h2>Receta médica</h2>
+			<form>
+				<label for="medicine">Medicamento:</label>
+				<input type="text" id="medicine" name="medicine" required>
+		
+				<label for="dosage">Dosis:</label>
+				<input type="text" id="dosage" name="dosage" required>
+		
+				<label for="frequency">Frecuencia:</label>
+				<input type="text" id="frequency" name="frequency" required>
+		
+				<label for="duration">Duración:</label>
+				<input type="text" id="duration" name="duration" required>
+		
+				<button type="submit">Enviar</button>
+			</form>
+		</div>
 	</div>
-	<div class="right-section">
-		<h2>Receta médica</h2>
-		<form>
-			<label for="medicine">Medicamento:</label>
-			<input type="text" id="medicine" name="medicine" required>
 
-			<label for="dosage">Dosis:</label>
-			<input type="text" id="dosage" name="dosage" required>
+	<div class="consulta">
+		<h2>Consulta</h2>
+		<div class="chequeo">
+			<label for="">Peso</label>
+			<input type="number" placeholder="Ingresar Peso">
+			<label for="">Presion</label>
+			<input type="text" placeholder="Ingresar la Presion">
+			<label for="">Oxigenacion</label>
+			<input type="number" placeholder="Ingresar los niveles de oxigenacion">
+			<label for="">Estatura</label>
+			<input type="number" placeholder="Ingresar la estatura">
+		</div>
+		<div class="observaciones">
+			<label for="">Observaciones</label>
+			<textarea name="" id="" cols="30" rows="10"></textarea>
+			<input type="submit" value="Cancelar">
 
-			<label for="frequency">Frecuencia:</label>
-			<input type="text" id="frequency" name="frequency" required>
-
-			<label for="duration">Duración:</label>
-			<input type="text" id="duration" name="duration" required>
-
-			<button type="submit">Enviar</button>
-		</form>
+			<input type="submit" value="Guardar">
+		</div>
 	</div>
-	</main>
+</main>
+
+	
+
 
 	
 </body>

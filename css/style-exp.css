@@ -87,20 +87,34 @@ nav {
     
 }
 
-/*---------------------------------------------------------------*/
+/*----CONTAINER-----------------------------------------------------------*/
 
+.container
+{
+	display: flex;
+	margin: 10px;
+}
+
+/*---------------------------------------------------------------*/
 
 .left-section {
 	width: 50%;
 	float: left;
 	padding: 20px;
+	background-color: rgb(97, 143, 143);
+	margin: 5px;
 }
 
 .right-section {
 	width: 50%;
 	float: right;
 	padding: 20px;
+	background-color: rgb(134, 119, 189);
+	margin: 5px;
+
 }
+
+
 
 h2 {
 	text-align: center;
@@ -143,3 +157,31 @@ button[type="submit"] {
 button[type="submit"]:hover {
 	background-color: #0069d9;
 }
+
+
+/*---------------------------------------------------------*/
+
+.consulta {
+    display: flex;
+    width: 100%;
+}
+
+
+.chequeo {
+    background-color: rgb(99, 116, 53);
+    width: 50%;
+}
+
+.observaciones {
+    background-color: rgb(99, 116, 53);
+    padding: 10px;
+    width: 50%;
+
+}
+
+.observaciones textarea {
+    width: 75%;
+}
+
+
+/*---------------------------------------------------------*/
