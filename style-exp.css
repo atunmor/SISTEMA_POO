@@ -1,20 +1,24 @@
-.container {
+.container 
+{
 	max-width: 600px;
 	margin: 0 auto;
 	padding: 20px;
 	box-sizing: border-box;
 }
 
-h1 {
+h1 
+{
 	text-align: center;
 }
 
-label {
+label 
+{
 	display: block;
 	margin-top: 20px;
 }
 
-input, textarea {
+input, textarea 
+{
 	width: 100%;
 	padding: 10px;
 	box-sizing: border-box;
@@ -22,11 +26,13 @@ input, textarea {
 	border-radius: 4px;
 }
 
-input[type=radio] {
+input[type=radio] 
+{
 	margin-right: 10px;
 }
 
-input[type=submit] {
+input[type=submit] 
+{
 	background-color: #4CAF50;
 	color: white;
 	border: none;
