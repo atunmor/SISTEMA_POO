@@ -93,7 +93,11 @@ main {
 		
         
         
-/*----------------------------------------------------------------------------*/       
+/*----------------------------------------------------------------------------*/  
+        .BC{
+            display: inline-flex;
+        }
+
         .contenedor1{
             text-align: justify;
             font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -117,7 +121,7 @@ main {
             padding: 30px;
 			background-color: #ccc;
 			border: 1px solid black;
-			margin: 10px;
+			margin: 40px;
 			display: inline-block;
             top:30px;
         }
