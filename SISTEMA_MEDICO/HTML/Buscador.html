@@ -1,0 +1,191 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NuevaPagina</title>
+  <link rel="stylesheet" href="../CSS/buscador.css">
+	
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="container-img">
+          <img src="../img/LOGO.jpg" alt="LOGO">
+          <a href="Pagina_principal.html">NAME</a>
+      </div>
+      <div class="container-links">
+          <a href="Pagina_principal.html">Inicio</a>
+          <a href="../HTML/Buscador.html">Pacientes</a>
+          <a href="expediente-med.html">Expediente</a>
+      </div>
+      <div class="menu-user">
+          <a href="#">Mi perfil</a><br>
+          <a href="#">Editar perfil</a><br>
+          <a href="#">Cerrar Sesión</a>
+      </div>
+      <div class="container-menu">
+          <img src="../img/usuario-icono.png" alt="usuario-icono">
+
+      </div>
+  </nav>
+  </header>
+
+  <main>
+    <div class="contenedor1">
+
+        <label for="input1">Nombre(s): </label>
+        <input type="text" name="Nombre" id="input1" min="1" max="50"><br>
+
+        <label for="input2">Apellido paterno: </label>
+        <input type="text" name="Ap" id="input2" min="1" max="15"><br>
+        
+        
+        <label for="input3">Apellido materno: </label>
+        <input type="text" name="Am" id="input3" min="1" max="15"><br>
+
+
+        <form method="get" action="#">
+              <label for="input4">Genero:</label>
+              <select name="genero" id="input4">
+                <option>Masculino</option>
+                <option>Femenino</option>
+                <option>Otro</option>
+              </select>
+            </form>
+            
+            <br>
+
+          <form method="get" action="#">
+              <label for="input5">Tipo de Sangre:</label>
+              <select name="tipsa" id="input5">
+                <option>A+</option>
+                <option>A-</option>
+                <option>B+</option>
+                <option>B-</option>
+                <option>AB+</option>
+                <option>AB-</option>
+                <option>O+</option>
+                <option>O-</option>
+              </select>
+          </form>
+
+          <br>
+        
+          <label for="input6">Edad:</label>
+          <input type="number" name="edad" id="input6" min="3" max="117"><br>
+       
+          <label for="input7">Peso: </label>
+          <input type="number" name="peso" id="input7" min="0" max="400"><br>
+          
+          <label for="input8">Estatura: </label>
+          <input type="number" name="estatura" id="input8" min="0" max="260"><br>
+          
+          <label for="input9">CURP: </label>
+          <input type="text" name="CURP" id="input9" min="18" max="18"><br>
+          
+
+          <button type="button" onclick="search()">Buscar</button>
+</div>
+	<div class="contenedor2">
+        Datos del paciente:
+        <div>
+
+            <p>Nombre:<input type="text" name="Nombre" id="Nombre" min="1" max="50"></p>
+
+            <p>Apellido paterno:<input type="text" name="Ap" id="Ap" min="1" max="15"></p>
+
+            <p>Apellido materno:<input type="text" name="Am" id="Am" min="1" max="15"></p>
+
+            <p><form method="get" action="#">
+                <p>
+                  <label for="Genero">Genero:</label>
+                  <select name="genero" id="gen">
+                    <option>Masculino</option>
+                    <option>Femenino</option>
+                    <option>Otro</option>
+                  </select>
+                </p>
+              </form></p>
+              <p><form method="get" action="#">
+                <p>
+                  <label for="tipSangre">Tipo de Sangre:</label>
+                  <select name="tipsa" id="tsan">
+                    <option>A+</option>
+                    <option>A-</option>
+                    <option>B+</option>
+                    <option>B-</option>
+                    <option>AB+</option>
+                    <option>AB-</option>
+                    <option>O+</option>
+                    <option>O-</option>
+                  </select>
+                </p>
+              </form></p>
+            
+            <p>Edad:<input type="number" name="edad" id="edad" min="3" max="117"></p>
+           
+            <p>Peso:<input type="number" name="peso" id="peso" min="0" max="400"></p>
+            
+            <p>Estatura:<input type="number" name="estatura" id="estatura" min="0" max="260"></p>
+            
+            <p>CURP:<input type="text" name="CURP" id="CURP" min="18" max="18"></p>
+            <br>
+        <a href="registrar.html">
+            <button class="button">
+            <span class="button-text">CREAR</span>
+            <div class="fill-container"></div>
+          </button>
+        </a>
+    </div>
+    <div class="contenedor3"></div>
+    
+  </main>
+  <footer>
+    
+    <table>
+		<thead>
+			<tr>
+				<th>Nombre(s):</th>
+				<th>Apellido paterno:</th>
+        <th>Apellido materno:</th>
+        <th>Sexo:</th>
+        <th>Tipo de sangre:</th>
+				<th>Edad:</th>
+        <th>Peso:</th>
+        <th>Estatura:</th>
+        <th>CURP: </th>
+			</tr>
+		</thead>
+		<tbody>
+      <tr>
+        <td>Luis Pedro</td>
+				<td>Zúñiga</td>
+        <td>Rodríguez</td>
+        <td>Masculino</td>
+        <td>O+</td>
+				<td>20</td>
+        <td>60</td>
+        <td>175</td>
+        <td>ZURL031220HTSXDSA0</td>
+      </tr>
+			<tr>
+				<td>AndreA</td>
+				<td>Zúñiga</td>
+        <td>Rodríguez</td>
+        <td>Femenino</td>
+        <td>O+</td>
+				<td>21</td>
+        <td>70</td>
+        <td>170</td>
+        <td>ZURL031220HTSXDSA0</td>
+			</tr>
+		</tbody>
+	</table>
+  
+</footer>
+
+<script src="../JS/back-end/buscador.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(167, 209, 233);
+    height: 110px; /*!modificar altura de la barra*/
+    border-bottom: 2px solid black;
+}
+
+main {
+    display: flex;
+}
+
+/*--------------NAVBAR---------------------------------------------*/
+
+/*--LOGO DEL NAVBAR--*/
+.container-img {
+    display: flex;
+    align-items: center;
+    width: 25%;    
+}
+
+.container-img img {
+    width: 80px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    border-radius: 50%;
+}
+
+.container-img a {
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+/*--BARRA DE NAVEGACION DE PAGINAS--*/
+.container-links {
+    width: 65%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.container-links a {
+    text-decoration: none;
+    border-bottom:  1px solid black;
+    border-right:  1px solid black;
+    border-radius: 0 0 10px;
+    margin: 10px;
+    padding: 10px;
+    color: black;
+}
+
+/*--MENU DE USUARIO--*/
+.container-menu {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 10px;
+    
+}
+
+.menu-user {
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.menu-user a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border-bottom:  1px solid black;
+    border-right:  1px solid black;
+    border-radius: 0 0 10px;
+    margin-right: 5px;
+    padding: 10px;
+    
+}
+
+.container-menu img {
+    width: 80px;
+    border-radius: 50%;
+    display: flex;
+    
+}
+		
+        
+        
+/*----------------------------------------------------------------------------*/       
+        .contenedor1{
+            text-align: justify;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 40%;
+            height: 70%;
+            margin:auto;
+            padding: 30px;
+			background-color: #ccc;
+			border: 1px solid black;
+			margin: 40px;
+			display: inline-block;
+            top:30px;
+        
+        }
+        .contenedor2{
+            text-align: justify;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            width: 40%;
+            height: 70%;
+            margin:auto;
+            padding: 30px;
+			background-color: #ccc;
+			border: 1px solid black;
+			margin: 10px;
+			display: inline-block;
+            top:30px;
+        }
+       

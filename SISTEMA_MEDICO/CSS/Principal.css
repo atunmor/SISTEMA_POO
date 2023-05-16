@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    background-color: rgb(167, 209, 233);
+    height: 110px; /*!modificar altura de la barra*/
+    border-bottom: 2px solid black;
+}
+
+main {
+    display: flex;
+}
+
+/*--------------NAVBAR---------------------------------------------*/
+
+/*--LOGO DEL NAVBAR--*/
+.container-img {
+    display: flex;
+    align-items: center;
+    width: 25%;    
+}
+
+.container-img img {
+    width: 80px;
+    margin-left: 10px;
+    margin-bottom: 0;
+    border-radius: 50%;
+}
+
+.container-img a {
+    text-decoration: none;
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+/*--BARRA DE NAVEGACION DE PAGINAS--*/
+.container-links {
+    width: 65%;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.container-links a {
+    text-decoration: none;
+    border-bottom:  1px solid black;
+    border-right:  1px solid black;
+    border-radius: 0 0 10px;
+    margin: 10px;
+    padding: 10px;
+    color: black;
+}
+
+/*--MENU DE USUARIO--*/
+.container-menu {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 10px;
+    
+}
+
+.menu-user {
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.menu-user a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border-bottom:  1px solid black;
+    border-right:  1px solid black;
+    border-radius: 0 0 10px;
+    margin-right: 5px;
+    padding: 10px;
+    
+}
+
+.container-menu img {
+    width: 80px;
+    border-radius: 50%;
+    display: flex;
+    
+}
+
+/*----------------------------------------------------------------------------------------*/
+
+/*----------BUSCADOR---------------*/
+.buscador {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 40px;
+    background-color: rgb(147, 184, 206);
+}
+
+.barra-buscador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-buscador {
+    width: 250px;
+    height: 35px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.input-btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 7px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.barra-buscador {
+    height: 50%;
+}
+
+/*------------------------------------------------*/
+
+
+
+
+
+/*-----CALENDARIO-------------------------*/
+
+/*--CAJA DEL CALENDARIO--*/
+.calendario {
+    width: 50%;
+    height: 600px;
+}
+
+.calendario h1 {
+    text-align: center;
+    margin: 10px 0;
+    
+}
+
+/*--TABLA DONDE ESTA DENTRO EL CALENDARIO--*/
+.calendario table {
+    width: 600px;
+    height: 450px;
+    margin: 0 50px;
+    background-color: rgb(161, 249, 255);
+    border-radius: 10px;
+    padding: 0 10px 10px 10px;
+    padding: 30px;
+}
+
+.calendario thead th {
+    background-color: rgb(9, 239, 255);
+    font-size: 22px;
+    margin: 10px;
+    border-radius: 0 10px 0;
+    padding: 3px; 
+}
+
+.calendario tbody tr {
+    width: 80px;
+    height: 80px;
+}
+
+/*--EFECTO DEL CURSOR AL PASARPOR EL DIA*/
+.celda-calendario:hover {
+    background-color: #47a7f5;
+    cursor: pointer;
+}
+
+.dia-actual {
+    border: 1px dotted #0026ff;
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------------*/
+/*--FORMULARIO DE CITAS NUEVAS--*/
+
+.new-date {
+    width: 25%;
+}
+
+.new-date form {
+    margin: 10px;
+    font-size: 22px;
+    background-color: rgb(134, 250, 250);
+    padding: 10px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.new-date label {
+    display: block;
+    padding: 5px;
+}
+
+.new-date input {
+    height: 35px;
+    width: 300px;
+    border-radius: 5px;
+    padding: 0 3px;
+}
+
+.new-date textarea {
+    height: 100px;
+    padding: 10px 0 0 10px;
+}
+
+.new-date-btn {
+    display: flex;
+}
+
+.new-date-btn input {
+    margin: 10px;
+    cursor: pointer;
+}
+
+/*---------------------------------------------------*/
+/*--CUadro de citas del dia*/
+
+.citas {
+
+    width: 90%;
+    height: 280px;
+    border: 1px solid #333;
+    max-height: 270px; /* Ajusta la altura máxima según tus necesidades */
+    overflow: auto;
+
+}
+
+.citas-head {
+    width: 90%;
+    display: flex;
+    font-size: 25px;
+    text-align: center;
+    justify-content: space-between;
+    border: 1px solid #333;
+}
+
+.citas-head h4 {
+    margin: 15px;
+}
+
+.cita-container {
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cita-container label {
+    margin: 5px;
+    padding: 5px;
+}
+
+/*--------------------------------------------------*/
+footer {
+    background-color: rgb(167, 209, 233);
+    height: 70px;
+}
+
+/*--Ventana emergente--*/
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  z-index: 9999;
+}
+
+.popup h2 {
+  margin-top: 0;
+}
+
+.popup p {
+  margin-bottom: 10px;
+}
+
+#close-button {
+  margin-top: 10px;
+}
+
