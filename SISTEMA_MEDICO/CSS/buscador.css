@@ -94,35 +94,78 @@ main {
         
         
 /*----------------------------------------------------------------------------*/  
-        .BC{
-            display: inline-flex;
-        }
+.BC{
+    display: flex;
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    margin: 30px;
+    
 
-        .contenedor1{
-            text-align: justify;
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            width: 40%;
-            height: 70%;
-            margin:auto;
-            padding: 30px;
-			background-color: #ccc;
-			border: 1px solid black;
-			margin: 40px;
-			display: inline-block;
-            top:30px;
-        
-        }
-        .contenedor2{
-            text-align: justify;
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            width: 40%;
-            height: 70%;
-            margin:auto;
-            padding: 30px;
-			background-color: #ccc;
-			border: 1px solid black;
-			margin: 40px;
-			display: inline-block;
-            top:30px;
-        }
+
+}
+.contenedor1 input {
+ margin-bottom: 5px;
+}
+.contenedor2 p,
+.contenedor2 input {
+margin-bottom: 9px;
+}
+.contenedor1{
+
+text-align: justify;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+width: 450px;
+height: 100%;
+margin:auto;
+padding: 30px;
+background-color: #ccc;
+border: 1px solid black;
+margin: 40px;
+display: inline-block;
+top:30px;
+}
+.contenedor2{
+text-align: justify;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+width: 450px;
+height: 100%;
+margin: auto;
+padding: 30px;
+background-color: #ccc;
+border: 1px solid black;
+margin: 90px;
+display: inline-block;
+top:30px;
+}
+table {
+position: relative;
+border-collapse: collapse;
+width: 100%;
+bottom: -280px;
+left:-130%;
+}
+th, td {
+border: 1px solid black;
+padding: 5px;
+text-align: center
+
+}
+input[type="text"],
+input[type="number"],
+select {
+padding:2px;
+margin-left: 5px;
+}
+button{
+float:right;
+border-radius: 10px;
+background-color:white;
+padding: 10px;
+font-size: 15px;
+
+}
+
+    
        
