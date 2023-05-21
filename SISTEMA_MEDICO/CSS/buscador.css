@@ -168,4 +168,23 @@ font-size: 15px;
 }
 
     
-       
+#mostrar-datos {
+    margin-top: 20px;
+  }
+  
+  #tabla-pacientes {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  #tabla-pacientes th,
+  #tabla-pacientes td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #tabla-pacientes th {
+    background-color: #f2f2f2;
+  }
